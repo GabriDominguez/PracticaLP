@@ -1,4 +1,4 @@
-# Practica
+# Práctica
 
 # Decision Trees
 
