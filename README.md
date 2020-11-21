@@ -56,7 +56,7 @@ El algoritmo procederá a construir recursivamente de este modo el árbol de dec
 ## Explicación del cálculo entropico
 
 El cálculo entrópico se basa en la siguiente fórmula:
-imagen
+![alt text](https://miro.medium.com/max/391/1*nNY_7_aWRwp8E2DyGduEPg.png)
 imagen2
 
 Siendo el cálculo entrópico el valor negado de la probabilidad que este sea edible multiplicado por el logaritmo en base dos de la probabilidad que sea edible menos la probabilidad que este sea poisonous multiplicado el logaritmo en base dos de la probabilidad de que sea poisonous.
@@ -83,8 +83,6 @@ https://medium.com/coinmonks/what-is-entropy-and-why-information-gain-is-matter-
 
 
 
-- dts: Archivo que ejecuta la totalidad del programa que contiene todas las funciones necesarias para el correcto funcionamiento y resolución de este
-- agar.data: Archivo donde se almacenan los datos a evaluar, extraidos de https://archive.ics.uci.edu/ml/datasets/Mushroom
 
 
 
