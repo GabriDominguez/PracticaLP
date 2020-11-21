@@ -4,25 +4,25 @@
 
 Practica LP Haskell Gabriel Domínguez Piernas Q1 2020-2021.
 
-# Descripción
+## Descripción
 
 Esta practica genera un árbol de decisión en base al archivo "agaricus-lepiota.data" para poder determinar el cáracter (venenoso/comestible) de una seta en función de sus atributos y características.
 
-# Instalación
+## Instalación
 
 Para ejecutar la practica solamente hace falta compilar el archivo main.hs y ejecutarlo:
 
 -> ghc dts.hs
 ./dts
 
-# Entrada
+## Entrada
 La entrada por defecto es el fichero "agaricus-lepiota.data". Para cambiar esta entrada por defecto habría que cambiar el archivo que lee la función "readFile":
 
 contents <- readFile "ejemplo.data" 
 
 
 
-# Ejemplo de ejecución
+## Ejemplo de ejecución
 
 Welcome to Decision Trees from Gabriel Domínguez
 
@@ -30,7 +30,7 @@ wich odor?
 -> hacer luego
 
 
-# Contenido
+## Contenido
 - dts: Archivo que ejecuta la totalidad del programa que contiene todas las funciones necesarias para el correcto funcionamiento y resolución de este
 - agar.data: Archivo donde se almacenan los datos a evaluar, extraidos de https://archive.ics.uci.edu/ml/datasets/Mushroom
 
@@ -42,7 +42,7 @@ wich odor?
 
 
 
-# Explicación del algoritmo
+## Explicación del algoritmo
 
 El algoritmo implementado en esta práctica es el denominado ID3. Dicho algoritmo basa su ejecución es la selección de, entre todas las variables posibles a diferenciar, la que mayor entropía tenga, siendo entropía como el cálculo explicado en el siguiente apartado.  
 Una calculada la entropía de todas las variables del problema, se selecciona la máxima, esta representa la variable más determinante de las posibles y representará la raiz de nuestro árbol de decision.
@@ -53,7 +53,7 @@ El algoritmo procederá a construir recursivamente de este modo el árbol de dec
 
 
 
-# Explicación del cálculo entropico
+## Explicación del cálculo entropico
 
 El cálculo entrópico se basa en la siguiente fórmula:
 imagen
@@ -67,7 +67,7 @@ El cálculo repetido de todas las posibles variables en cada llamada recursiva d
 
 
 
-# Webgrafia
+## Webgrafia
 
 https://gebakx.github.io/ml/#35
 
