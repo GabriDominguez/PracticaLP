@@ -55,13 +55,20 @@ El algoritmo procederá a construir recursivamente de este modo el árbol de dec
 
 ## Explicación del cálculo entropico
 
-El cálculo entrópico se basa en la siguiente fórmula:
+El cálculo entrópico se basa en las siguientes fórmulas:
+
 ![alt text](https://miro.medium.com/max/391/1*nNY_7_aWRwp8E2DyGduEPg.png)
-imagen2
+
+![alt text](https://miro.medium.com/max/700/0*08CaHVjPCgs_fZyp.png)
+
+
 
 Siendo el cálculo entrópico el valor negado de la probabilidad que este sea edible multiplicado por el logaritmo en base dos de la probabilidad que sea edible menos la probabilidad que este sea poisonous multiplicado el logaritmo en base dos de la probabilidad de que sea poisonous.
 
 El "gain" es equivalente a la operación resultante entre el cálculo entrópico de la variable menos el sumatorio de todos los cálculos entrópicos de los atributos de este.
+
+Por ejemplo, imaginemos que las muestras totales son 10 y encontramos 3 de ellas comestibles y 7 venenosas, el cálculo seria el siguiente:
+![alt text](https://miro.medium.com/max/700/0*R2ifm13OVNp9ZvVX.png)
 
 El cálculo repetido de todas las posibles variables en cada llamada recursiva determina el comportamiento y construcción del árbol de decisión resultante.
 
