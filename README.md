@@ -61,6 +61,7 @@ El cálculo entrópico se basa en las siguientes fórmulas:
 
 
 ![alt text](https://miro.medium.com/max/391/1*nNY_7_aWRwp8E2DyGduEPg.png)
+![alt text](https://miro.medium.com/max/700/1*S6zcbdAzUvIOKBaWBKp9MA.png)
 
 
 
