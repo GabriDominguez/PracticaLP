@@ -6,7 +6,7 @@ Practica LP Haskell Gabriel Domínguez Piernas Q1 2020-2021.
 
 ## Descripción
 
-Esta practica genera un árbol de decisión en base al archivo "agaricus-lepiota.data" para poder determinar el cáracter (venenoso/comestible) de una seta en función de sus atributos y características.
+Esta practica genera un árbol de decisión en base al archivo "agaricus-lepiota.data" para poder determinar el carácter (venenoso/comestible) de una seta en función de sus atributos y características.
 
 ## Instalación
 
@@ -32,7 +32,7 @@ wich odor?
 
 ## Contenido
 - dts: Archivo que ejecuta la totalidad del programa que contiene todas las funciones necesarias para el correcto funcionamiento y resolución de este
-- agar.data: Archivo donde se almacenan los datos a evaluar, extraidos de https://archive.ics.uci.edu/ml/datasets/Mushroom
+- agar.data: Archivo donde se almacenan los datos a evaluar, extraídos de https://archive.ics.uci.edu/ml/datasets/Mushroom
 
 
 
@@ -45,11 +45,11 @@ wich odor?
 ## Explicación del algoritmo
 
 El algoritmo implementado en esta práctica es el denominado ID3. Dicho algoritmo basa su ejecución es la selección de, entre todas las variables posibles a diferenciar, la que mayor entropía tenga, siendo entropía como el cálculo explicado en el siguiente apartado.  
-Una calculada la entropía de todas las variables del problema, se selecciona la máxima, esta representa la variable más determinante de las posibles y representará la raiz de nuestro árbol de decision.
+Una calculada la entropía de todas las variables del problema, se selecciona la máxima, esta representa la variable más determinante de las posibles y representará la raíz de nuestro árbol de decisión.
 A continuación y de manera recursiva, se volverá a realizar el mismo cálculo pero esta vez condicionado por la elección anterior. Siendo X la variable escogida como nodo raíz del árbol, a partir de este se observarán las variables estando condicionadas por X. Para cada posible atributo que puede adoptar X se calcularán las entropías de las variables respecto de los datos que contengan la aparición de ese atributo en la condición. 
 Es decir, siendo X,Y,Z los posibles valores posibles para adoptar la posición de raíz del árbol y siendo a,b,c los posibles atributos que puede adoptar cada variable, se calculará la entropía para Y y Z en función de a, de b y de c. 
 Se realizará este proceso hasta llegar a un punto donde la entropía del atributo sea = 0. En este punto nos encontramos en una hoja, es decir, al llegar a ese punto del árbol podemos afirmar el carácter de la seta, podremos afirmar si se trata de una venenosa o no. 
-El algoritmo procederá a construir recursivamente de este modo el árbol de decision para poder determinar el cáracter de la seta. 
+El algoritmo procederá a construir recursivamente de este modo el árbol de decisión para poder determinar el carácter de la seta. 
 
 
 
@@ -59,11 +59,11 @@ El cálculo entrópico se basa en la siguiente fórmula:
 imagen
 imagen2
 
-Siendo el cálculo entropico el valor negado de la probabilidad que este sea edible multiplicado por el logaritmo en base dos de la probabilidad que sea edible menos la probabilidad que este sea poisonous multiplicado el logaritmo en base dos de la probabilidad de que sea poisonous.
+Siendo el cálculo entrópico el valor negado de la probabilidad que este sea edible multiplicado por el logaritmo en base dos de la probabilidad que sea edible menos la probabilidad que este sea poisonous multiplicado el logaritmo en base dos de la probabilidad de que sea poisonous.
 
 El "gain" es equivalente a la operación resultante entre el cálculo entrópico de la variable menos el sumatorio de todos los cálculos entrópicos de los atributos de este.
 
-El cálculo repetido de todas las posibles variables en cada llamada recursiva determina el comportamiento y construcción del árbol de decision resultante.
+El cálculo repetido de todas las posibles variables en cada llamada recursiva determina el comportamiento y construcción del árbol de decisión resultante.
 
 
 
