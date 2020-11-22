@@ -13,6 +13,7 @@ Esta practica genera un árbol de decisión en base al archivo "agaricus-lepiota
 Para ejecutar la practica solamente hace falta compilar el archivo main.hs y ejecutarlo:
 
 -> ghc dts.hs
+
 ./dts
 
 ## Entrada
