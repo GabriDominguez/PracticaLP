@@ -43,8 +43,8 @@ contents <- readFile "ejemplo.data"
 
 ## Explicación del algoritmo
 
-El algoritmo implementado en esta práctica es el denominado ID3. Dicho algoritmo basa su ejecución es la selección de, entre todas las variables posibles a diferenciar, la que mayor entropía tenga, siendo entropía como el cálculo explicado en el siguiente apartado.  
-Una calculada la entropía de todas las variables del problema, se selecciona la máxima, esta representa la variable más determinante de las posibles y representará la raíz de nuestro árbol de decisión.
+El algoritmo implementado en esta práctica es el denominado ID3. Dicho algoritmo basa su ejecución en la selección de, entre todas las variables posibles a diferenciar, la que mayor entropía tenga, siendo entropía como el cálculo explicado en el siguiente apartado.  
+Una vez calculada la entropía de todas las variables del problema, se selecciona la máxima, esta representa la variable más determinante de las posibles y representará la raíz de nuestro árbol de decisión.
 A continuación y de manera recursiva, se volverá a realizar el mismo cálculo pero esta vez condicionado por la elección anterior. Siendo X la variable escogida como nodo raíz del árbol, a partir de este se observarán las variables estando condicionadas por X. Para cada posible atributo que puede adoptar X se calcularán las entropías de las variables respecto de los datos que contengan la aparición de ese atributo en la condición. 
 Es decir, siendo X,Y,Z los posibles valores posibles para adoptar la posición de raíz del árbol y siendo a,b,c los posibles atributos que puede adoptar cada variable, se calculará la entropía para Y y Z en función de a, de b y de c. 
 Se realizará este proceso hasta llegar a un punto donde la entropía del atributo sea = 0. En este punto nos encontramos en una hoja, es decir, al llegar a ese punto del árbol podemos afirmar el carácter de la seta, podremos afirmar si se trata de una venenosa o no. 
