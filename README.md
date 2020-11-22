@@ -24,10 +24,8 @@ contents <- readFile "ejemplo.data"
 
 ## Ejemplo de ejecución
 
-Welcome to Decision Trees from Gabriel Domínguez
 
-wich odor?
--> hacer luego
+![alt text](https://raw.githubusercontent.com/GabriDominguez/PracticaLP/main/WhatsApp%20Image%202020-11-22%20at%2023.01.27.jpeg)
 
 
 ## Contenido
