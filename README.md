@@ -32,7 +32,7 @@ wich odor?
 
 ## Contenido
 - dts: Archivo que ejecuta la totalidad del programa que contiene todas las funciones necesarias para el correcto funcionamiento y resolución de este
-- agar.data: Archivo donde se almacenan los datos a evaluar, extraídos de https://archive.ics.uci.edu/ml/datasets/Mushroom
+- agaricus-lepiota.data: Archivo donde se almacenan los datos a evaluar, extraídos de https://archive.ics.uci.edu/ml/datasets/Mushroom
 
 
 
